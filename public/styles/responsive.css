@@ -1,0 +1,56 @@
+/*Expansivo*/
+
+@media (max-width: 900px) {  /* REGRAS DE INTERFACE só pode ser usado com METANAME = "VIEWPORT"*/
+    #page-home {
+    background-position-x: 70vw;
+    
+        
+    }
+    #page-home .content {
+    align-items: center;
+    text-align: center;       /* atalho TA + ENTER*/
+    }
+    
+    #page-home header a {
+    position: absolute;   /*PARA SMARTPHONE E TABLETS(FOLHA DE PAPEL ACIMA)*/
+    bottom: 48px;
+    
+    left: 50%;
+    transform: translateX(-50%); /*Encontra o ponto médio*/
+    }
+    
+    #page-home main {
+    align-items: center;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+
+    }
+
+    #page-search-results .cards img {
+        height: 200px;
+    }
+
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field{
+        margin-left: 0;
+    }
+
+
+    }
+
+    @media (min-width: 1700px) {
+        #page-home{
+    background-position-X: 40vw;
+    }
+}
+
+@media (max-height: 760px) {
+    #page-home{
+        background-position-Y: 200px;
+        }
+}
